@@ -36,7 +36,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-violet-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <Leaf className="text-white w-4 h-4" />
               </div>
               <span className="text-2xl font-bold">AllergenAI</span>

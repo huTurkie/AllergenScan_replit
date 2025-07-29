@@ -30,10 +30,10 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-br from-blue-violet-500 to-purple-600 rounded-lg flex items-center justify-center">
               <Leaf className="text-white w-4 h-4" />
             </div>
-            <span className="text-2xl font-bold text-blue-violet-600">AllergenAI</span>
+            <span className="text-2xl font-bold text-gray-900">AllergenAI</span>
           </div>
           
           <div className="hidden md:flex space-x-8">
