@@ -29,7 +29,7 @@ export default function Navigation() {
     } border-b border-gray-100`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-1">
             <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
               <path 
                 d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22L6.66 19.7C7.14 19.87 7.64 20 8 20C19 20 22 3 22 3C21 5 14 5.25 9 6.25C4 7.25 2 11.5 2 15.5C2 15.5 2 20.5 8 20.5C14 20.5 17 8 17 8Z" 
