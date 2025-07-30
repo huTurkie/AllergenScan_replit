@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Users, Star } from "lucide-react";
 import peanutButterImage from "@assets/penaut butter_1753845120270.webp";
+import cameraOptionsImage from "@assets/camera options_1753846336625.jpg";
 
 export default function HeroSection() {
   return (
@@ -149,6 +150,15 @@ export default function HeroSection() {
                       animate={{ y: [0, 224, 0] }}
                       transition={{ repeat: Infinity, duration: 2 }}
                     />
+                    
+                    {/* Camera Options at bottom of scanning area */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-full px-4">
+                      <img 
+                        src={cameraOptionsImage} 
+                        alt="Camera scanning options" 
+                        className="w-full h-auto object-contain rounded-lg opacity-90"
+                      />
+                    </div>
                   </div>
                   
                   <div className="bg-white text-gray-800 px-4 py-3 rounded-lg flex items-center space-x-2 shadow-lg border">
