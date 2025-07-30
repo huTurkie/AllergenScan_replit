@@ -134,19 +134,19 @@ export default function HeroSection() {
                       className="w-full h-full object-contain opacity-90" 
                     />
                     
-                    {/* Small Square Scanning overlay */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-blue-violet-500 rounded-lg">
-                      <div className="absolute top-1 left-1 w-4 h-4 border-t-2 border-l-2 border-blue-violet-500"></div>
-                      <div className="absolute top-1 right-1 w-4 h-4 border-t-2 border-r-2 border-blue-violet-500"></div>
-                      <div className="absolute bottom-1 left-1 w-4 h-4 border-b-2 border-l-2 border-blue-violet-500"></div>
-                      <div className="absolute bottom-1 right-1 w-4 h-4 border-b-2 border-r-2 border-blue-violet-500"></div>
+                    {/* Large Square Scanning overlay */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-56 border-2 border-blue-violet-500 rounded-lg">
+                      <div className="absolute top-1 left-1 w-6 h-6 border-t-2 border-l-2 border-blue-violet-500"></div>
+                      <div className="absolute top-1 right-1 w-6 h-6 border-t-2 border-r-2 border-blue-violet-500"></div>
+                      <div className="absolute bottom-1 left-1 w-6 h-6 border-b-2 border-l-2 border-blue-violet-500"></div>
+                      <div className="absolute bottom-1 right-1 w-6 h-6 border-b-2 border-r-2 border-blue-violet-500"></div>
                     </div>
                     
-                    {/* Scanning line animation - smaller area */}
+                    {/* Scanning line animation - larger area */}
                     <motion.div 
-                      className="absolute left-1/2 transform -translate-x-1/2 w-32 h-0.5 bg-blue-violet-500 opacity-75"
-                      style={{ top: 'calc(50% - 64px)' }}
-                      animate={{ y: [0, 128, 0] }}
+                      className="absolute left-1/2 transform -translate-x-1/2 w-48 h-0.5 bg-blue-violet-500 opacity-75"
+                      style={{ top: 'calc(50% - 112px)' }}
+                      animate={{ y: [0, 224, 0] }}
                       transition={{ repeat: Infinity, duration: 2 }}
                     />
                   </div>
