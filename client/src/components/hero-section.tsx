@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Users, Star } from "lucide-react";
+import peanutButterImage from "@assets/penaut butter_1753845120270.webp";
 
 export default function HeroSection() {
   return (
@@ -128,7 +129,7 @@ export default function HeroSection() {
                 <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
                   <div className="flex-1 bg-black rounded-xl relative overflow-hidden mb-4">
                     <img 
-                      src="/attached_assets/penaut butter_1753845120270.webp" 
+                      src={peanutButterImage} 
                       alt="Jif peanut butter jar" 
                       className="w-full h-full object-contain opacity-90" 
                     />
