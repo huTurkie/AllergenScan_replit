@@ -103,117 +103,30 @@ export default function HeroSection() {
             className="relative transform lg:translate-y-[-2rem] hover:rotate-0 transition-transform duration-300"
           >
             <div className="w-80 h-[600px] bg-gray-900 rounded-[2.5rem] p-3 shadow-2xl">
-              <div className="w-full h-full bg-black rounded-[2rem] overflow-hidden relative">
-                {/* Camera status bar */}
-                <div className="absolute top-0 left-0 right-0 p-4 flex justify-between items-center text-white text-sm z-20">
-                  <span>01:00</span>
-                  <div className="flex items-center space-x-1">
-                    <div className="w-1 h-1 bg-white rounded-full"></div>
-                    <div className="w-1 h-1 bg-white rounded-full"></div>
-                    <div className="w-1 h-1 bg-white rounded-full"></div>
-                    <span className="text-xs">5G</span>
-                    <span className="text-xs bg-white text-black px-1 rounded">86</span>
-                  </div>
-                </div>
-
-                {/* Top control buttons */}
-                <div className="absolute top-16 left-0 right-0 flex justify-between items-center px-6 z-20">
-                  <div className="w-12 h-12 bg-black/50 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </div>
-                  <div className="w-12 h-12 bg-black/50 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                </div>
-
-                {/* Main camera view */}
-                <div className="w-full h-full relative">
-                  <img 
-                    src={peanutButterImage} 
-                    alt="Jif peanut butter jar scanning view" 
-                    className="w-full h-full object-cover" 
-                  />
-                  
-                  {/* Scanning overlay frame */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-64">
-                    <div className="w-full h-full border-2 border-white rounded-lg relative">
-                      <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-white rounded-tl-lg"></div>
-                      <div className="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-white rounded-tr-lg"></div>
-                      <div className="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-white rounded-bl-lg"></div>
-                      <div className="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-white rounded-br-lg"></div>
+              <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
+                <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
+                  <div className="flex-1 bg-white rounded-xl relative overflow-hidden">
+                    <img 
+                      src={peanutButterImage} 
+                      alt="Jif peanut butter jar" 
+                      className="w-full h-full object-contain opacity-90" 
+                    />
+                    
+                    {/* Large Square Scanning overlay */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-56 border-2 border-blue-violet-500 rounded-lg">
+                      <div className="absolute top-1 left-1 w-6 h-6 border-t-2 border-l-2 border-blue-violet-500"></div>
+                      <div className="absolute top-1 right-1 w-6 h-6 border-t-2 border-r-2 border-blue-violet-500"></div>
+                      <div className="absolute bottom-1 left-1 w-6 h-6 border-b-2 border-l-2 border-blue-violet-500"></div>
+                      <div className="absolute bottom-1 right-1 w-6 h-6 border-b-2 border-r-2 border-blue-violet-500"></div>
                     </div>
                     
-                    {/* Scanning line animation */}
+                    {/* Scanning line animation - larger area */}
                     <motion.div 
-                      className="absolute left-0 right-0 h-0.5 bg-blue-violet-400 opacity-80"
-                      animate={{ y: [0, 256, 0] }}
-                      transition={{ repeat: Infinity, duration: 2.5 }}
+                      className="absolute left-1/2 transform -translate-x-1/2 w-48 h-0.5 bg-blue-violet-500 opacity-75"
+                      style={{ top: 'calc(50% - 112px)' }}
+                      animate={{ y: [0, 224, 0] }}
+                      transition={{ repeat: Infinity, duration: 2 }}
                     />
-                  </div>
-                </div>
-
-                {/* Bottom camera controls */}
-                <div className="absolute bottom-20 left-0 right-0 px-6 z-20">
-                  <div className="flex justify-center items-center space-x-4 bg-black/40 backdrop-blur-sm rounded-2xl p-4">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-black/60 rounded-xl flex items-center justify-center mb-1">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                          <circle cx="9" cy="9" r="2"/>
-                          <path d="M21 15l-3.086-3.086a2 2 0 00-2.828 0L6 21"/>
-                        </svg>
-                      </div>
-                      <span className="text-white text-xs">Gallery</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-black/60 rounded-xl flex items-center justify-center mb-1">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V6a2 2 0 012-2h2M4 16v2a2 2 0 002 2h2m8-16V6a2 2 0 012 2v2m0 8v2a2 2 0 01-2 2h-2" />
-                        </svg>
-                      </div>
-                      <span className="text-white text-xs">Scan Label</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-1">
-                        <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                          <line x1="8" y1="21" x2="16" y2="21"/>
-                          <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                      </div>
-                      <span className="text-white text-xs">Barcode</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-black/60 rounded-xl flex items-center justify-center mb-1">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                        </svg>
-                      </div>
-                      <span className="text-white text-xs">Scan Food</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom camera capture button */}
-                <div className="absolute bottom-4 left-0 right-0 flex justify-center items-center space-x-8 z-20">
-                  <div className="w-8 h-8 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </div>
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center border-4 border-gray-300">
-                    <div className="w-12 h-12 bg-white rounded-full"></div>
-                  </div>
-                  <div className="w-8 h-8 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                      <circle cx="9" cy="9" r="2"/>
-                      <path d="M21 15l-3.086-3.086a2 2 0 00-2.828 0L6 21"/>
-                    </svg>
                   </div>
                 </div>
               </div>
