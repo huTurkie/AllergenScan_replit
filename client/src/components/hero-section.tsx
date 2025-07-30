@@ -92,16 +92,23 @@ export default function HeroSection() {
                 
                 {/* Overlay Cards */}
                 <div className="absolute inset-0 p-4 flex flex-col justify-end space-y-3">
-                  <div className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2 shadow-lg">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="bg-white text-gray-800 px-4 py-2 rounded-lg flex items-center space-x-2 shadow-lg border">
+                    <svg className="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20,6 9,17 4,12"></polyline>
+                    </svg>
                     <span className="font-semibold">Halal</span>
                   </div>
-                  <div className="bg-emerald-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2 shadow-lg">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="bg-white text-gray-800 px-4 py-2 rounded-lg flex items-center space-x-2 shadow-lg border">
+                    <svg className="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20,6 9,17 4,12"></polyline>
+                    </svg>
                     <span className="font-semibold">Vegan</span>
                   </div>
-                  <div className="bg-orange-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2 shadow-lg">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="bg-white text-gray-800 px-4 py-2 rounded-lg flex items-center space-x-2 shadow-lg border">
+                    <svg className="w-4 h-4 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
                     <span className="font-semibold">Contains Allergens</span>
                   </div>
                 </div>
