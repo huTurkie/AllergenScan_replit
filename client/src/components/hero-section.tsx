@@ -133,34 +133,7 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Curvy Arrow pointing from right to left */}
-          <div className="hidden lg:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none z-10">
-            <svg 
-              width="120" 
-              height="80" 
-              viewBox="0 0 120 80" 
-              className="text-blue-violet-500"
-            >
-              {/* Curvy arrow path */}
-              <path
-                d="M80 20 Q50 10, 20 40 Q10 50, 20 60"
-                stroke="currentColor"
-                strokeWidth="3"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              {/* Arrow head */}
-              <path
-                d="M20 60 L15 55 M20 60 L15 65"
-                stroke="currentColor"
-                strokeWidth="3"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
+
         </div>
 
         {/* Social Proof Badges */}
