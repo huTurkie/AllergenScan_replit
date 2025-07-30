@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Users, Star } from "lucide-react";
 import peanutButterImage from "@assets/penaut butter_1753845120270.webp";
 import cameraOptionsImage from "@assets/camera options_1753846539961.jpg";
-import allergenAiAppImage from "@assets/Sora_allergenAI CLEAR PIC 1_1753850028196.png";
+import allergenAiHomeImage from "@assets/allergen home page_1753850891461.jpg";
 
 export default function HeroSection() {
   return (
@@ -84,11 +84,15 @@ export default function HeroSection() {
             transition={{ duration: 1, delay: 0.6 }}
             className="relative transform lg:translate-y-8 hover:rotate-0 transition-transform duration-300"
           >
-            <img 
-              src={allergenAiAppImage} 
-              alt="AllergenAI app interface showing food restrictions and recent activity" 
-              className="w-80 h-auto rounded-2xl shadow-2xl" 
-            />
+            <div className="w-64 h-[500px] bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
+              <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
+                <img 
+                  src={allergenAiHomeImage} 
+                  alt="AllergenAI app home page showing food restrictions and recent activity" 
+                  className="w-full h-full object-cover" 
+                />
+              </div>
+            </div>
           </motion.div>
 
           {/* Phone 2: Label Scanning */}
