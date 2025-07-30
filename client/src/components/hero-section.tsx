@@ -103,49 +103,30 @@ export default function HeroSection() {
             className="relative transform lg:translate-y-[-2rem] hover:rotate-0 transition-transform duration-300"
           >
             <div className="w-80 h-[600px] bg-gray-900 rounded-[2.5rem] p-3 shadow-2xl">
-              <div className="w-full h-full bg-black rounded-[2rem] overflow-hidden relative">
-                {/* Camera background with kitchen/table surface */}
-                <div 
-                  className="absolute inset-0"
-                  style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
-                />
-                
-                {/* Camera overlay to darken background slightly */}
-                <div className="absolute inset-0 bg-black/20" />
-                
-                {/* Peanut butter jar positioned naturally on the surface */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <img 
-                    src={peanutButterImage} 
-                    alt="Jif peanut butter jar" 
-                    className="w-48 h-64 object-contain drop-shadow-lg" 
-                  />
-                </div>
-                
-                {/* Large Square Scanning overlay */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-52 h-60 border-2 border-white rounded-lg">
-                  <div className="absolute top-1 left-1 w-6 h-6 border-t-2 border-l-2 border-white"></div>
-                  <div className="absolute top-1 right-1 w-6 h-6 border-t-2 border-r-2 border-white"></div>
-                  <div className="absolute bottom-1 left-1 w-6 h-6 border-b-2 border-l-2 border-white"></div>
-                  <div className="absolute bottom-1 right-1 w-6 h-6 border-b-2 border-r-2 border-white"></div>
-                </div>
-                
-                {/* Scanning line animation */}
-                <motion.div 
-                  className="absolute left-1/2 transform -translate-x-1/2 w-52 h-0.5 bg-blue-violet-400 opacity-80"
-                  style={{ top: 'calc(50% - 120px)' }}
-                  animate={{ y: [0, 240, 0] }}
-                  transition={{ repeat: Infinity, duration: 2.5 }}
-                />
-                
-                {/* Camera UI elements */}
-                <div className="absolute bottom-6 left-0 right-0 flex justify-center">
-                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full border-4 border-white/30 flex items-center justify-center">
-                    <div className="w-12 h-12 bg-white rounded-full opacity-90"></div>
+              <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
+                <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
+                  <div className="flex-1 bg-white rounded-xl relative overflow-hidden">
+                    <img 
+                      src={peanutButterImage} 
+                      alt="Jif peanut butter jar" 
+                      className="w-full h-full object-contain opacity-90" 
+                    />
+                    
+                    {/* Large Square Scanning overlay */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-56 border-2 border-blue-violet-500 rounded-lg">
+                      <div className="absolute top-1 left-1 w-6 h-6 border-t-2 border-l-2 border-blue-violet-500"></div>
+                      <div className="absolute top-1 right-1 w-6 h-6 border-t-2 border-r-2 border-blue-violet-500"></div>
+                      <div className="absolute bottom-1 left-1 w-6 h-6 border-b-2 border-l-2 border-blue-violet-500"></div>
+                      <div className="absolute bottom-1 right-1 w-6 h-6 border-b-2 border-r-2 border-blue-violet-500"></div>
+                    </div>
+                    
+                    {/* Scanning line animation - larger area */}
+                    <motion.div 
+                      className="absolute left-1/2 transform -translate-x-1/2 w-48 h-0.5 bg-blue-violet-500 opacity-75"
+                      style={{ top: 'calc(50% - 112px)' }}
+                      animate={{ y: [0, 224, 0] }}
+                      transition={{ repeat: Infinity, duration: 2 }}
+                    />
                   </div>
                 </div>
               </div>
