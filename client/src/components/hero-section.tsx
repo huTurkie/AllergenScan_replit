@@ -151,13 +151,57 @@ export default function HeroSection() {
                       transition={{ repeat: Infinity, duration: 2 }}
                     />
                     
-                    {/* Camera Options at bottom of scanning area */}
-                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-full px-4">
-                      <img 
-                        src={cameraOptionsImage} 
-                        alt="Camera scanning options" 
-                        className="w-full h-auto object-contain rounded-lg opacity-90"
-                      />
+                    {/* Camera Control Buttons */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center space-x-4">
+                      {/* Gallery Button */}
+                      <div className="flex flex-col items-center">
+                        <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
+                          <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21,15 16,10 5,21"/>
+                          </svg>
+                        </div>
+                        <span className="text-xs text-white mt-1">Gallery</span>
+                      </div>
+
+                      {/* Scan Label Button */}
+                      <div className="flex flex-col items-center">
+                        <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
+                          <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M9 9h6v6h-6z"/>
+                            <path d="M21 15V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z"/>
+                          </svg>
+                        </div>
+                        <span className="text-xs text-white mt-1">Scan Label</span>
+                      </div>
+
+                      {/* Barcode Button (highlighted) */}
+                      <div className="flex flex-col items-center">
+                        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center">
+                          <svg className="w-6 h-6 text-black" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="6" width="2" height="12"/>
+                            <rect x="6" y="6" width="1" height="12"/>
+                            <rect x="9" y="6" width="1" height="12"/>
+                            <rect x="12" y="6" width="2" height="12"/>
+                            <rect x="16" y="6" width="1" height="12"/>
+                            <rect x="19" y="6" width="3" height="12"/>
+                          </svg>
+                        </div>
+                        <span className="text-xs text-white mt-1">Barcode</span>
+                      </div>
+
+                      {/* Scan Food Button */}
+                      <div className="flex flex-col items-center">
+                        <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
+                          <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M3 2l1.5 14.5L12 18l7.5-1.5L21 2z"/>
+                            <path d="M12 18v-8"/>
+                            <path d="M8 10h8"/>
+                          </svg>
+                        </div>
+                        <span className="text-xs text-white mt-1">Scan Food</span>
+                      </div>
                     </div>
                   </div>
                   
