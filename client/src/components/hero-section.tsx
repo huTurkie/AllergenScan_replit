@@ -128,23 +128,24 @@ export default function HeroSection() {
                 <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
                   <div className="flex-1 bg-black rounded-xl relative overflow-hidden mb-4">
                     <img 
-                      src="https://images.unsplash.com/photo-1563636619-e9143da7973b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                      alt="Supermarket product package" 
+                      src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                      alt="Peanut butter jar" 
                       className="w-full h-full object-cover opacity-80" 
                     />
                     
-                    {/* Scanning overlay */}
-                    <div className="absolute inset-0 border-2 border-blue-violet-500 rounded-xl">
-                      <div className="absolute top-4 left-4 w-6 h-6 border-t-2 border-l-2 border-blue-violet-500"></div>
-                      <div className="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-blue-violet-500"></div>
-                      <div className="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-blue-violet-500"></div>
-                      <div className="absolute bottom-4 right-4 w-6 h-6 border-b-2 border-r-2 border-blue-violet-500"></div>
+                    {/* Small Square Scanning overlay */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-blue-violet-500 rounded-lg">
+                      <div className="absolute top-1 left-1 w-4 h-4 border-t-2 border-l-2 border-blue-violet-500"></div>
+                      <div className="absolute top-1 right-1 w-4 h-4 border-t-2 border-r-2 border-blue-violet-500"></div>
+                      <div className="absolute bottom-1 left-1 w-4 h-4 border-b-2 border-l-2 border-blue-violet-500"></div>
+                      <div className="absolute bottom-1 right-1 w-4 h-4 border-b-2 border-r-2 border-blue-violet-500"></div>
                     </div>
                     
-                    {/* Scanning line animation */}
+                    {/* Scanning line animation - smaller area */}
                     <motion.div 
-                      className="absolute inset-x-0 h-0.5 bg-blue-violet-500 opacity-75"
-                      animate={{ y: [0, 300, 0] }}
+                      className="absolute left-1/2 transform -translate-x-1/2 w-32 h-0.5 bg-blue-violet-500 opacity-75"
+                      style={{ top: 'calc(50% - 64px)' }}
+                      animate={{ y: [0, 128, 0] }}
                       transition={{ repeat: Infinity, duration: 2 }}
                     />
                   </div>
