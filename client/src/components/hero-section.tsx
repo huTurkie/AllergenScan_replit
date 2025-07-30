@@ -128,9 +128,9 @@ export default function HeroSection() {
                 <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
                   <div className="flex-1 bg-black rounded-xl relative overflow-hidden mb-4">
                     <img 
-                      src="https://images.unsplash.com/photo-1622484254862-a17d2e8e1a1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                      alt="Peanut butter jar" 
-                      className="w-full h-full object-cover opacity-70" 
+                      src="/attached_assets/penaut butter_1753845120270.webp" 
+                      alt="Jif peanut butter jar" 
+                      className="w-full h-full object-contain opacity-90" 
                     />
                     
                     {/* Small Square Scanning overlay */}
