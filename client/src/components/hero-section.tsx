@@ -76,68 +76,19 @@ export default function HeroSection() {
           </motion.div>
         </div>
 
-        {/* Smartphone Mockups */}
-        <div className="flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-12">
-          {/* Phone 1: AllergenAI App Interface */}
+        {/* AllergenAI App Image */}
+        <div className="flex justify-center items-center">
           <motion.div 
-            initial={{ opacity: 0, x: -50, rotate: -10 }}
-            animate={{ opacity: 1, x: 0, rotate: -5 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="relative transform lg:translate-y-8 hover:rotate-0 transition-transform duration-300"
+            className="max-w-lg w-full"
           >
-            <div className="w-64 h-[500px] bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
-              <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
-                <img 
-                  src={allergenAiAppImage} 
-                  alt="AllergenAI app interface showing food restrictions and recent activity" 
-                  className="w-full h-full object-cover" 
-                />
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Phone 2: Label Scanning */}
-          <motion.div 
-            initial={{ opacity: 0, x: 50, rotate: 10 }}
-            animate={{ opacity: 1, x: 0, rotate: 5 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="relative transform lg:translate-y-[-2rem] hover:rotate-0 transition-transform duration-300"
-          >
-            <div className="w-64 h-[500px] bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
-              <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
-                <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
-                  {/* Top App Name */}
-                  <div className="mb-2">
-                    <h3 className="text-lg font-bold text-blue-violet-600">AllergenAI</h3>
-                  </div>
-                  <div className="flex-1 bg-white rounded-xl relative overflow-hidden">
-                    <img 
-                      src={peanutButterImage} 
-                      alt="Jif peanut butter jar" 
-                      className="w-full h-full object-contain opacity-90" 
-                    />
-                    
-                    {/* Large Square Scanning overlay */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-56 border-2 border-blue-violet-500 rounded-lg">
-                      <div className="absolute top-1 left-1 w-6 h-6 border-t-2 border-l-2 border-blue-violet-500"></div>
-                      <div className="absolute top-1 right-1 w-6 h-6 border-t-2 border-r-2 border-blue-violet-500"></div>
-                      <div className="absolute bottom-1 left-1 w-6 h-6 border-b-2 border-l-2 border-blue-violet-500"></div>
-                      <div className="absolute bottom-1 right-1 w-6 h-6 border-b-2 border-r-2 border-blue-violet-500"></div>
-                    </div>
-                    
-                    {/* Scanning line animation - larger area */}
-                    <motion.div 
-                      className="absolute left-1/2 transform -translate-x-1/2 w-48 h-0.5 bg-blue-violet-500 opacity-75"
-                      style={{ top: 'calc(50% - 112px)' }}
-                      animate={{ y: [0, 224, 0] }}
-                      transition={{ repeat: Infinity, duration: 2 }}
-                    />
-                  </div>
-                  
-
-                </div>
-              </div>
-            </div>
+            <img 
+              src={allergenAiAppImage} 
+              alt="AllergenAI app interface showing food restrictions and recent activity" 
+              className="w-full h-auto rounded-2xl shadow-2xl" 
+            />
           </motion.div>
         </div>
 
