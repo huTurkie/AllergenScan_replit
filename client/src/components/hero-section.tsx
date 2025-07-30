@@ -102,7 +102,7 @@ export default function HeroSection() {
             transition={{ duration: 1, delay: 0.8 }}
             className="relative transform lg:translate-y-[-2rem] hover:rotate-0 transition-transform duration-300"
           >
-            <div className="w-64 h-[500px] bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
+            <div className="w-80 h-[600px] bg-gray-900 rounded-[2.5rem] p-3 shadow-2xl">
               <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
                 <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
                   <div className="flex-1 bg-white rounded-xl relative overflow-hidden">
