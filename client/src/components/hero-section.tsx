@@ -128,8 +128,8 @@ export default function HeroSection() {
                 <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
                   <div className="flex-1 bg-black rounded-xl relative overflow-hidden mb-4">
                     <img 
-                      src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                      alt="Food product nutrition label" 
+                      src="https://images.unsplash.com/photo-1563636619-e9143da7973b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                      alt="Supermarket product package" 
                       className="w-full h-full object-cover opacity-80" 
                     />
                     
@@ -149,8 +149,11 @@ export default function HeroSection() {
                     />
                   </div>
                   
-                  <div className="bg-red-500 text-white px-4 py-3 rounded-lg flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="bg-white text-gray-800 px-4 py-3 rounded-lg flex items-center space-x-2 shadow-lg border">
+                    <svg className="w-4 h-4 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
                     <span className="font-semibold">Allergen Warning!</span>
                   </div>
                 </div>
