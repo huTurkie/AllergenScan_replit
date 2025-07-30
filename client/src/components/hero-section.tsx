@@ -102,10 +102,6 @@ export default function HeroSection() {
             <div className="w-64 h-[500px] bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
               <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
                 <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
-                  {/* Top App Name */}
-                  <div className="mb-2">
-                    <h3 className="text-lg font-bold text-blue-violet-600">AllergenAI</h3>
-                  </div>
                   <div className="flex-1 bg-white rounded-xl relative overflow-hidden">
                     <img 
                       src={peanutButterImage} 
