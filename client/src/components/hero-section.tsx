@@ -24,10 +24,9 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold text-blue-violet-700 mb-6 leading-tight"
+            className="text-4xl md:text-6xl font-bold mb-6 leading-tight"
           >
-            Scan food labels and meals to reveal<br />
-            <span className="text-blue-violet-500">allergens and dietary info instantly</span>
+            <span className="text-black">Scan. Detect.</span> <span className="text-blue-violet-500">Stay Safe.</span>
           </motion.h1>
           
           <motion.p 
