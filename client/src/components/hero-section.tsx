@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Users, Star } from "lucide-react";
 import peanutButterImage from "@assets/penaut butter_1753845120270.webp";
 import cameraOptionsImage from "@assets/camera options_1753846539961.jpg";
+import allergenAiAppImage from "@assets/Sora_allergenAI CLEAR PIC 1_1753850028196.png";
 
 export default function HeroSection() {
   return (
@@ -77,7 +78,7 @@ export default function HeroSection() {
 
         {/* Smartphone Mockups */}
         <div className="flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-12">
-          {/* Phone 1: Food Scanning */}
+          {/* Phone 1: AllergenAI App Interface */}
           <motion.div 
             initial={{ opacity: 0, x: -50, rotate: -10 }}
             animate={{ opacity: 1, x: 0, rotate: -5 }}
@@ -87,33 +88,10 @@ export default function HeroSection() {
             <div className="w-64 h-[500px] bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
               <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000" 
-                  alt="Colorful falafel and salad plate" 
+                  src={allergenAiAppImage} 
+                  alt="AllergenAI app interface showing food restrictions and recent activity" 
                   className="w-full h-full object-cover" 
                 />
-                
-                {/* Overlay Cards */}
-                <div className="absolute inset-0 p-4 flex flex-col justify-end space-y-3">
-                  <div className="bg-white text-gray-800 px-4 py-2 rounded-lg flex items-center space-x-2 shadow-lg border">
-                    <svg className="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="20,6 9,17 4,12"></polyline>
-                    </svg>
-                    <span className="font-semibold">Halal</span>
-                  </div>
-                  <div className="bg-white text-gray-800 px-4 py-2 rounded-lg flex items-center space-x-2 shadow-lg border">
-                    <svg className="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="20,6 9,17 4,12"></polyline>
-                    </svg>
-                    <span className="font-semibold">Vegan</span>
-                  </div>
-                  <div className="bg-white text-gray-800 px-4 py-2 rounded-lg flex items-center space-x-2 shadow-lg border">
-                    <svg className="w-4 h-4 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <line x1="18" y1="6" x2="6" y2="18"></line>
-                      <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                    <span className="font-semibold">Contains Allergens</span>
-                  </div>
-                </div>
               </div>
             </div>
           </motion.div>
