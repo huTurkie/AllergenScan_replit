@@ -127,7 +127,7 @@ export default function HeroSection() {
             <div className="w-64 h-[500px] bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
               <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
                 <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white p-6 flex flex-col">
-                  <div className="flex-1 bg-black rounded-xl relative overflow-hidden mb-4">
+                  <div className="flex-1 bg-white rounded-xl relative overflow-hidden mb-4">
                     <img 
                       src={peanutButterImage} 
                       alt="Jif peanut butter jar" 
